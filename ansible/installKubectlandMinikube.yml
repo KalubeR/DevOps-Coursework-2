@@ -1,0 +1,11 @@
+- name: Playbook for installing kubectl and minikube
+  hosts: localhost
+  user: ubuntu
+  become: yes
+  tasks:
+ 
+  - name: Install Kubectl
+    apt:
+      update_cache: yes 
+      name: 
+
