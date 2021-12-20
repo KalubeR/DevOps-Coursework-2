@@ -1,0 +1,9 @@
+- name: Playbook to deploy the docker image to Kubernetes
+  hosts: localhost
+  user: ubuntu
+  
+  tasks:
+
+  - name: 12. Deploy from Dockerhub to Kubernetes
+    shell:
+      cmd: kubectl create deployment coursework-deployment --image=kaluber/devopscoursework2:1.0

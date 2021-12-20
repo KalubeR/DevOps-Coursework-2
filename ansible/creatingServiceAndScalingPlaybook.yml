@@ -1,0 +1,12 @@
+- name: Playbook to create a Service and Scale the application
+  hosts: localhost
+  user: ubuntu
+  
+  tasks:
+
+  - name: 13. Create Service
+    shell:
+      cmd: kubectl expose deployment/coursework-deployment --type="NodePort" --port 8080 --name coursework2-service
+  - name: 14. Scale the application
+    shell:
+      cmd: kubectl scale deployments/coursework-deployment --replicas=5
