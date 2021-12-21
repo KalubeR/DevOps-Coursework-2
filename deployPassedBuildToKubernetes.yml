@@ -1,0 +1,8 @@
+- name: Playbook to deploy the docker image to Kubernetes
+  hosts: dev
+  
+  tasks:
+
+  - name: 15. Deploy Successfull Build from DockerHub
+    shell:
+      cmd: kubectl set image deployments/coursework-deployment devopscoursework2=kaluber/devopscoursework2:latest
