@@ -1,5 +1,5 @@
 - name: Playbook to deploy the docker image to Kubernetes
-  hosts: localhost
+  hosts: webservers
   user: ubuntu
   
   tasks:
