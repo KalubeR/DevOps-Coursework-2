@@ -1,4 +1,4 @@
-- name: Playbook to deploy the docker image to Kubernetes
+- name: Playbook to automatically deploy the successfull build to Kubernetes
   hosts: dev
   
   tasks:
