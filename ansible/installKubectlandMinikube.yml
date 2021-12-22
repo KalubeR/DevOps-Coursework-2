@@ -38,11 +38,11 @@
     become: yes
     shell:
       cmd: curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-  - name: 10. Move Minikube
+  - name: 9. Move Minikube
     copy:
       src: minikube
       dest: /usr/local/bin
-  - name: 9. Change minikube ownership (executable)
+  - name: 10. Change minikube ownership (executable)
     become: yes
     file:
       path: /usr/local/bin/minikube
